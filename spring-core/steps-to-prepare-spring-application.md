@@ -9,6 +9,11 @@
 
 # 1. Download spring farmework[Jars] from Internet.  
 
-a. https://repo.spring.io/ui/native/release/org/springframework/spring
+https://repo.spring.io/ui/native/release/org/springframework/spring
 
-b. commons-logging-1.2
+1. commons-logging-1.2  
+2. spring-beans-4.3.4.RELEASE.jar
+3. spring-context-4.3.4.RELEASE.jar  
+4. spring-context-support-4.3.4.RELEASE.jar  
+5. spring-core-4.3.4.RELEASE.jar  
+
