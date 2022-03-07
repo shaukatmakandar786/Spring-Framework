@@ -25,5 +25,15 @@ https://repo.spring.io/ui/native/release/org/springframework/spring
 
 a. Bean is a reusable component,it is a normal java class having properties and the respective setXXX() and getXXX() methods.  
 
-b. Spring Framework is using POJO[Plain Old Java Object] classes ,it will not extend or implement any predefine liabrary except java.io.Serialiable marker interface.  
+b. Spring Framework is using POJO[Plain Old Java Object] classes ,it will not extend or implement any predefine liabrary except java.io.Serializable marker interface.  
+
+    UseBean----> JSP  
+    ActionForm/FormBean---> Struts  
+    BackingBean---> JSF  
+    POJO---> Hibernate  
+    POJO---> Spring  
+    
+c. In Spring Framework, POJO class must be Java bean class,It must be declared as a public ,non abstract and non final  
+    
+    
 
