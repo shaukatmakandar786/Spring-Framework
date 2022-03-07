@@ -28,7 +28,15 @@ a. Bean is a reusable component,it is a normal java class having properties and 
 b. Spring Framework is using POJO[Plain Old Java Object] classes ,it will not extend or implement any predefine liabrary except java.io.Serializable marker interface.  
 
     UseBean----> JSP  
-    ActionForm/FormBean---> Struts  
+    ActionForm/FormBean---> Struts  package com.shaukat.beans;
+
+public class HelloBean {
+
+	public String sayHello()
+	{
+		return "Hello Guys...!";
+	}
+}
     BackingBean---> JSF  
     POJO---> Hibernate  
     POJO---> Spring  
@@ -101,3 +109,51 @@ d. Get bean object from ApplicationContext container on the basis if id.
     public Object getBean(String id);  
 
     HelloBean hb=(HelloBean)cnxt.getBean("helloBean");  
+    
+## First Example on Spring Framework:  
+
+### HelloBean.java  
+
+    package com.shaukat.beans;  
+
+    public class HelloBean {  
+
+	    public String sayHello()  
+	    {  
+		    return "Hello Guys...!";  
+	    }  
+    }  
+
+### beans.xml  
+
+    <?xml version="1.0" encoding="UTF-8"?>  
+        <beans xmlns="http://www.springframework.org/schema/beans"  
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+         xsi:schemaLocation="http://www.springframework.org/schema/beans  
+             https://www.springframework.org/schema/beans/spring-beans.xsd">  
+
+         <bean id="helloBean" class="com.shaukat.beans.HelloBean">  
+              <!-- collaborators and configuration for this bean go here -->  
+         </bean>  
+   
+        </beans>  
+        
+### Test.java  
+
+       package com.shaukat.test;
+
+       import org.springframework.context.ApplicationContext;
+       import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+       import com.shaukat.beans.HelloBean;  
+
+       public class Test {  
+
+	        public static void main(String[] args) {  
+		        // TODO Auto-generated method stub  
+		        ApplicationContext context=new ClassPathXmlApplicationContext("beans.xml");  
+		        HelloBean hBean=(HelloBean)context.getBean("helloBean");  
+		        System.out.println(hBean.sayHello());  
+	        }  
+
+        }  
