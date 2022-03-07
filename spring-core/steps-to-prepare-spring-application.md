@@ -47,6 +47,7 @@ all method as public methods inorder to improve "Encapsulation".
 
 f. In beans class if we want to provide constructor then we can to provide constructor,butitmust be public and 0-arg  
 constructor,because while instantiating Bean class,Spring Framework will search and execute 0-arg constructor and public constructor.
-    
-    
 
+g. If we want to provide our own comparision between Bean object then we have to override equals() method.  
+
+h. If we want to generate hashcode values of the Bean object in our own view then we have to override hasCode() method.  
