@@ -37,7 +37,8 @@ c. In Spring Framework, POJO class must be Java bean class,It must be declared a
     
     i. The main intention of declaring Bean as a public is to make available to spring Framework indore to create objects.  
     ii. In Spring Framework Applications, Spring Framework must create object for the Bean class,it must be non abstract.  
-    iii. In Spring Framework Application, if we want to extends one bean class to another class as per the requirements and   as per improviding code reusability we must declared bean class non final.  
+    iii. In Spring Framework Application, if we want to extends one bean class to another class as per the requirements and   
+    as per improviding code reusability we must declared bean class non final.  
     
     
 
