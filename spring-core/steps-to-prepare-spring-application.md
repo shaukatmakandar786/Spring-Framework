@@ -98,6 +98,6 @@ c. To create ApplicationContext container we have to use the following code.
     
 d. Get bean object from ApplicationContext container on the basis if id.  
 
-public Object getBean(String id);  
+    public Object getBean(String id);  
 
-HeelloBean hb=(HelloBean)cnxt.getBean("helloBean");  
+    HeelloBean hb=(HelloBean)cnxt.getBean("helloBean");  
