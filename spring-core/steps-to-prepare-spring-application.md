@@ -6,3 +6,7 @@
 4. Prepare Bean class.  
 5. Prepare Spring configuration with bean class.  
 6. Prepare Test Application.  
+
+# 1. Download spring farmework[Jars] from Internet.  
+
+https://repo.spring.io/ui/native/release/org/springframework/spring
