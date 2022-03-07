@@ -17,3 +17,6 @@ https://repo.spring.io/ui/native/release/org/springframework/spring
 4. spring-context-support-4.3.4.RELEASE.jar  
 5. spring-core-4.3.4.RELEASE.jar  
 
+# 2. Prepare java project in Eclips IDE.  
+
+# 3. Prepare spring liabrary with required jar files.  
