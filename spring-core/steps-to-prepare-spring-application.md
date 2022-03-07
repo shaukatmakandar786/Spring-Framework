@@ -100,4 +100,4 @@ d. Get bean object from ApplicationContext container on the basis if id.
 
     public Object getBean(String id);  
 
-    HeelloBean hb=(HelloBean)cnxt.getBean("helloBean");  
+    HelloBean hb=(HelloBean)cnxt.getBean("helloBean");  
