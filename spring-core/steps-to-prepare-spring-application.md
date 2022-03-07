@@ -40,5 +40,13 @@ c. In Spring Framework, POJO class must be Java bean class,It must be declared a
     iii. In Spring Framework Application, if we want to extends one bean class to another class as per the requirements and   
     as per improviding code reusability we must declared bean class non final.  
     
+d. In bean class we must declared properties as per the requirement and we must provide a seprate set of setXXX() methos and getXXX() method.  
+
+e. In bean class we must declared all propertires as private properties ,we must declare  
+all method as public methods inorder to improve "Encapsulation".  
+
+f. In beans class if we want to provide constructor then we can to provide constructor,butitmust be public and 0-arg  
+constructor,because while instantiating Bean class,Spring Framework will search and execute 0-arg constructor and public constructor.
+    
     
 
