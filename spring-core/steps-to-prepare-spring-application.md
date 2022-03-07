@@ -51,3 +51,26 @@ constructor,because while instantiating Bean class,Spring Framework will search 
 g. If we want to provide our own comparision between Bean object then we have to override equals() method.  
 
 h. If we want to generate hashcode values of the Bean object in our own view then we have to override hasCode() method.  
+
+# 5. Prepare Spring configuration with bean class.  
+
+a. It is an XML file, it will include all beans configuration details like name of the Bean class, identity of the Bean class.properties of and their values of the Bean class.  
+b. The main intension of Bean configuration is Spring configuration file is to create Bean object by spring Framework..  
+c. Spring Framework is able to allow any name to the configuration file, but the suggestible name is "applicationContext.xml".  
+  
+  
+<beans  ---XSD>
+    -----
+    <bean id="---" class="---"/>
+    -----
+</beans>  
+id:it will take a variable name as an identity to generate bean Object.  
+class:It will take fully qualified name of the respective Bean class.  
+
+<beans  ---XSD>
+    -----
+    <bean id="helloBean" class="com.shaukat.HelloBean"/>
+    -----
+</beans>  
+
+# 6. Prepare Test Application.  
