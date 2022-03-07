@@ -59,18 +59,19 @@ b. The main intension of Bean configuration is Spring configuration file is to c
 c. Spring Framework is able to allow any name to the configuration file, but the suggestible name is "applicationContext.xml".  
   
   
-<beans  ---XSD>
-    -----
-    <bean id="---" class="---"/>
-    -----
-</beans>  
+    <beans  ---XSD>  
+        -----  
+        <bean id="---" class="---"/>  
+         -----  
+    </beans>  
+
 id:it will take a variable name as an identity to generate bean Object.  
 class:It will take fully qualified name of the respective Bean class.  
 
-<beans  ---XSD>
-    -----
-    <bean id="helloBean" class="com.shaukat.HelloBean"/>
-    -----
-</beans>  
+    <beans  ---XSD>  
+         -----  
+        <bean id="helloBean" class="com.shaukat.HelloBean"/>  
+         -----  
+    </beans>  
 
 # 6. Prepare Test Application.  
